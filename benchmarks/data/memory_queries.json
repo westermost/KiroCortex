@@ -1,0 +1,42 @@
+[
+  {
+    "query": "docker compose postgresql local database",
+    "expected_doc_id": "docker-postgres"
+  },
+  {
+    "query": "redis cache layer port 6379",
+    "expected_doc_id": "redis-cache"
+  },
+  {
+    "query": "react 18 vite typescript frontend",
+    "expected_doc_id": "react-frontend"
+  },
+  {
+    "query": "alice auth-service owner oauth jwt",
+    "expected_doc_id": "auth-service-owner"
+  },
+  {
+    "query": "stripe billing webhooks invoice events",
+    "expected_doc_id": "stripe-billing"
+  },
+  {
+    "query": "nightly backups amazon s3 retention snapshots",
+    "expected_doc_id": "s3-backups"
+  },
+  {
+    "query": "terraform infrastructure aws eu-west-1 state bucket",
+    "expected_doc_id": "terraform-infra"
+  },
+  {
+    "query": "staging kubernetes nginx-ingress rolling updates",
+    "expected_doc_id": "kubernetes-staging"
+  },
+  {
+    "query": "sentry alerts backend-oncall slack channel",
+    "expected_doc_id": "sentry-monitoring"
+  },
+  {
+    "query": "transactional email postmark templates qa@example.com",
+    "expected_doc_id": "email-provider"
+  }
+]

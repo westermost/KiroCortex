@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-04-18 23:18:55",
+  "cortex_bin": "/mnt/d/SourceCode/AI/KiroGuard/target/release/kiro-cortex",
+  "cortex_bin_sha256": "fe285a0ec70b7d6c9534d1ebd87b7c982aa67cb64c24e91a0d47a709626f6ac5",
+  "cortex_bin_size_bytes": 34450760,
+  "rounds": 1,
+  "warmup_runs": 0,
+  "dataset_mode": "public_retrieval_approximation",
+  "sample_size": 497,
+  "benchmark_status": "experimental_retrieval_approximation",
+  "config": {
+    "conversations_requested": 3
+  },
+  "datasets": [
+    {
+      "name": "locomo10",
+      "url": "https://raw.githubusercontent.com/snap-research/locomo/main/data/locomo10.json",
+      "path": "/mnt/d/SourceCode/AI/KiroGuard/benchmarks/.cache/locomo10.json",
+      "exists": true,
+      "size_bytes": 2805274,
+      "sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4"
+    }
+  ],
+  "conversations": 3,
+  "questions": 497,
+  "recall": 0.36217303822937624,
+  "evidence_hit_rate": 0.1529175050301811,
+  "avg_ms": 260.6502427761462,
+  "p95_ms": 309.50179300270975,
+  "by_category": {
+    "2": {
+      "total": 90,
+      "recall": 0.24444444444444444
+    },
+    "3": {
+      "total": 21,
+      "recall": 0.14285714285714285
+    },
+    "1": {
+      "total": 74,
+      "recall": 0.35135135135135137
+    },
+    "4": {
+      "total": 200,
+      "recall": 0.445
+    },
+    "5": {
+      "total": 112,
+      "recall": 0.35714285714285715
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-04-18 22:54:03",
+  "cortex_bin": "/mnt/d/SourceCode/AI/KiroGuard/target/release/kiro-cortex",
+  "cortex_bin_sha256": "fe285a0ec70b7d6c9534d1ebd87b7c982aa67cb64c24e91a0d47a709626f6ac5",
+  "cortex_bin_size_bytes": 34450760,
+  "rounds": 1,
+  "warmup_runs": 0,
+  "dataset_mode": "fallback",
+  "sample_size": 13,
+  "benchmark_status": "fallback",
+  "config": {
+    "attack_sample_requested": 100,
+    "benign_cases": 10
+  },
+  "datasets": [
+    {
+      "name": "bipia_text_attack_test",
+      "url": "https://raw.githubusercontent.com/microsoft/BIPIA/main/benchmark/text_attack_test.json",
+      "path": "/mnt/d/SourceCode/AI/KiroGuard/benchmarks/.cache/bipia_text_attack_test.json",
+      "exists": true,
+      "size_bytes": 6322,
+      "sha256": "75750e7b4e8b34e8f9d88d89b357aeaaf02bd07f9e493ccd37eda74a0cd7c7f8"
+    }
+  ],
+  "suite": "BIPIA",
+  "total": 13,
+  "tp": 3,
+  "tn": 10,
+  "fp": 0,
+  "fn": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "false_positive_rate": 0.0,
+  "avg_ms": 301.3389966262576,
+  "p95_ms": 336.0272890422493,
+  "false_negatives": [],
+  "false_positives": []
+}

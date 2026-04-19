@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-04-18 22:53:56",
+  "cortex_bin": "/mnt/d/SourceCode/AI/KiroGuard/target/release/kiro-cortex",
+  "cortex_bin_sha256": "fe285a0ec70b7d6c9534d1ebd87b7c982aa67cb64c24e91a0d47a709626f6ac5",
+  "cortex_bin_size_bytes": 34450760,
+  "rounds": 1,
+  "warmup_runs": 0,
+  "config": {
+    "storage_count": 500,
+    "import_count": 200
+  },
+  "datasets": [
+    {
+      "name": "memory_corpus",
+      "path": "/mnt/d/SourceCode/AI/KiroGuard/benchmarks/data/memory_corpus.json",
+      "exists": true,
+      "size_bytes": 2370,
+      "sha256": "cbf55910ef6d378320e75035d1a432b2d38511cad8802a7fba1f422f473e9dc9"
+    },
+    {
+      "name": "memory_queries",
+      "path": "/mnt/d/SourceCode/AI/KiroGuard/benchmarks/data/memory_queries.json",
+      "exists": true,
+      "size_bytes": 1080,
+      "sha256": "0eabdc880e6c54a997d77d9c63b2aeb0482542076edfd73aa228396799eb08b9"
+    }
+  ],
+  "quality": {
+    "corpus_docs": 12,
+    "queries": 10,
+    "recall_at_1": 1.0,
+    "recall_at_5": 1.0,
+    "mrr_at_5": 1.0,
+    "ingest_avg_ms": 357.10133125151816,
+    "ingest_p95_ms": 391.70098199974746,
+    "search_avg_ms": 304.25780490622856,
+    "search_p95_ms": 331.4434610074386,
+    "stats_ms": 47.856974008027464,
+    "db_size_bytes": 106496,
+    "stats_output": "Chunks: 12\nSessions: 0\nEntities: 0\nTriples: 0",
+    "misses": []
+  },
+  "storage_e2e_hook": {
+    "stored_chunks": 500,
+    "ingest_total_ms": 181244.88844000734,
+    "ingest_avg_ms": 362.4426964086015,
+    "ingest_p95_ms": 659.1972759924829,
+    "throughput_chunks_per_sec": 2.758698489670795,
+    "search_avg_ms": 258.66898238891736,
+    "search_p95_ms": 266.21720899129286,
+    "stats_ms": 47.05162096070126,
+    "db_size_bytes": 1486848,
+    "stats_output": "Chunks: 500\nSessions: 0\nEntities: 0\nTriples: 0",
+    "forget_ms": 103.12346101272851,
+    "forget_output": "Deleted 500 chunks before 2099-01-01T00:00:00Z",
+    "post_forget_stats_ms": 44.739812961779535,
+    "post_forget_stats_output": "Chunks: 0\nSessions: 0\nEntities: 0\nTriples: 0"
+  },
+  "storage_store_only": {
+    "layer": "store_only",
+    "chunks": 500,
+    "import_ms": 7153.649598010816,
+    "import_throughput": 69.89439350496463,
+    "search_avg_ms": 282.15181776031386,
+    "search_p95_ms": 339.75553105119616,
+    "stats_ms": 43.47667196998373,
+    "forget_ms": 81.54939499218017
+  },
+  "injection": {
+    "spawn_latency_ms": 68.19652498234063,
+    "spawn_contains_security_context": true,
+    "spawn_contains_memory_context": true,
+    "spawn_known_doc_ids": 10,
+    "prompt_queries": 10,
+    "prompt_hit_rate": 0.9,
+    "prompt_avg_ms": 61.0066129011102,
+    "prompt_p95_ms": 63.71798302279785,
+    "prompt_misses": [
+      {
+        "query": "docker compose postgresql local database",
+        "expected_doc_id": "docker-postgres",
+        "reason": "expected doc_id not injected"
+      }
+    ]
+  },
+  "import_cli": {
+    "import_docs": 200,
+    "import_file_bytes": 35192,
+    "import_latency_ms": 5150.014119048137,
+    "throughput_docs_per_sec": 38.83484498814645,
+    "stats_ms": 51.558212959207594,
+    "stats_output": "Chunks: 44\nSessions: 1\nEntities: 0\nTriples: 0",
+    "db_size_bytes": 249856,
+    "import_output": "Imported 44 chunks from /tmp/tmpvgt916d3/import.txt"
+  }
+}

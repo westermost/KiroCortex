@@ -1,0 +1,50 @@
+[
+  {
+    "id": "docker-postgres",
+    "content": "[doc_id:docker-postgres] Project uses Docker Compose for local development. PostgreSQL 16 runs in docker-compose.yml with persistent volume pgdata and port 5432 exposed to the api service."
+  },
+  {
+    "id": "redis-cache",
+    "content": "[doc_id:redis-cache] Redis is used as the cache layer for session lookups and rate limiting. The service name is redis and the default port is 6379."
+  },
+  {
+    "id": "react-frontend",
+    "content": "[doc_id:react-frontend] Frontend stack is React 18 with Vite and TypeScript. State management is handled with Zustand and React Query."
+  },
+  {
+    "id": "auth-service-owner",
+    "content": "[doc_id:auth-service-owner] Alice owns the auth-service. The service handles OAuth login, JWT issuance, and password reset flows."
+  },
+  {
+    "id": "stripe-billing",
+    "content": "[doc_id:stripe-billing] Billing is integrated with Stripe. Webhooks update subscription status and invoice events are consumed by the billing worker."
+  },
+  {
+    "id": "s3-backups",
+    "content": "[doc_id:s3-backups] Nightly backups are uploaded to Amazon S3. The retention policy keeps 30 daily snapshots and 12 monthly snapshots."
+  },
+  {
+    "id": "terraform-infra",
+    "content": "[doc_id:terraform-infra] Infrastructure is provisioned with Terraform. The main state bucket is encrypted and the deployment target is AWS eu-west-1."
+  },
+  {
+    "id": "kubernetes-staging",
+    "content": "[doc_id:kubernetes-staging] Staging runs on Kubernetes. Ingress is managed by nginx-ingress and deployments use rolling updates with readiness probes."
+  },
+  {
+    "id": "sentry-monitoring",
+    "content": "[doc_id:sentry-monitoring] Error monitoring is handled with Sentry. Alerts are forwarded to the backend-oncall Slack channel."
+  },
+  {
+    "id": "feature-flags",
+    "content": "[doc_id:feature-flags] Feature flags are stored in Postgres and evaluated in the API layer. The launchdarkly migration is still pending."
+  },
+  {
+    "id": "cron-reporting",
+    "content": "[doc_id:cron-reporting] A cron job runs every hour to aggregate reporting metrics and writes summaries into the analytics schema."
+  },
+  {
+    "id": "email-provider",
+    "content": "[doc_id:email-provider] Transactional email is sent through Postmark. Templates are versioned and test emails go to qa@example.com."
+  }
+]

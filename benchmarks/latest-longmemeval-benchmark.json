@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-04-18 23:07:12",
+  "cortex_bin": "/mnt/d/SourceCode/AI/KiroGuard/target/release/kiro-cortex",
+  "cortex_bin_sha256": "fe285a0ec70b7d6c9534d1ebd87b7c982aa67cb64c24e91a0d47a709626f6ac5",
+  "cortex_bin_size_bytes": 34450760,
+  "rounds": 1,
+  "warmup_runs": 0,
+  "dataset_mode": "public_retrieval_approximation",
+  "sample_size": 50,
+  "benchmark_status": "experimental_retrieval_approximation",
+  "config": {
+    "questions_requested": 50,
+    "source_url": "https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/main/longmemeval_oracle.json"
+  },
+  "datasets": [
+    {
+      "name": "longmemeval_dataset",
+      "url": "https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/main/longmemeval_oracle.json",
+      "path": "/mnt/d/SourceCode/AI/KiroGuard/benchmarks/.cache/longmemeval_longmemeval_oracle.json",
+      "exists": true,
+      "size_bytes": 15388478,
+      "sha256": "821a2034d219ab45846873dd14c14f12cfe7776e73527a483f9dac095d38620c"
+    }
+  ],
+  "chunks_ingested": 2376,
+  "questions_evaluated": 50,
+  "recall_at_1": 1.0,
+  "recall_at_5": 1.0,
+  "mrr_at_5": 1.0,
+  "ingest_avg_ms": 326.1593130495268,
+  "search_avg_ms": 275.8343728003092,
+  "search_p95_ms": 374.73029899410903,
+  "by_category": {
+    "temporal-reasoning": {
+      "total": 50,
+      "recall": 1.0
+    }
+  }
+}

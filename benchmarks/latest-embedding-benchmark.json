@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-04-18 23:19:34",
+  "cortex_bin": "/mnt/d/SourceCode/AI/KiroGuard/target/release/kiro-cortex",
+  "cortex_bin_sha256": "fe285a0ec70b7d6c9534d1ebd87b7c982aa67cb64c24e91a0d47a709626f6ac5",
+  "cortex_bin_size_bytes": 34450760,
+  "rounds": 1,
+  "warmup_runs": 0,
+  "dataset_mode": "custom",
+  "sample_size": 12,
+  "config": {
+    "base_queries": 10,
+    "semantic_queries": 8
+  },
+  "datasets": [
+    {
+      "name": "memory_corpus",
+      "path": "/mnt/d/SourceCode/AI/KiroGuard/benchmarks/data/memory_corpus.json",
+      "exists": true,
+      "size_bytes": 2370,
+      "sha256": "cbf55910ef6d378320e75035d1a432b2d38511cad8802a7fba1f422f473e9dc9"
+    },
+    {
+      "name": "memory_queries",
+      "path": "/mnt/d/SourceCode/AI/KiroGuard/benchmarks/data/memory_queries.json",
+      "exists": true,
+      "size_bytes": 1080,
+      "sha256": "0eabdc880e6c54a997d77d9c63b2aeb0482542076edfd73aa228396799eb08b9"
+    },
+    {
+      "name": "semantic_memory_corpus",
+      "path": "/mnt/d/SourceCode/AI/KiroGuard/benchmarks/data/semantic_memory_corpus.json",
+      "exists": true,
+      "size_bytes": 2513,
+      "sha256": "58ec738925c794befd4c4317d71de37e81cd8aed86d8fe055d6110628bc7f9d7"
+    },
+    {
+      "name": "semantic_memory_queries",
+      "path": "/mnt/d/SourceCode/AI/KiroGuard/benchmarks/data/semantic_memory_queries.json",
+      "exists": true,
+      "size_bytes": 1752,
+      "sha256": "1e734311d5d38dedaba6cb9cab6a7eae0e20f7d7a2cab5d44448b60ef898e0c3"
+    }
+  ],
+  "bm25": {
+    "queries": 18,
+    "recall_at_1": 0.9444444444444444,
+    "recall_at_5": 1.0,
+    "mrr_at_5": 0.9722222222222222,
+    "avg_ms": 246.06147094810797,
+    "misses": []
+  },
+  "hybrid": {
+    "queries": 18,
+    "recall_at_1": 0.9444444444444444,
+    "recall_at_5": 1.0,
+    "mrr_at_5": 0.9722222222222222,
+    "avg_ms": 284.4131708908309,
+    "misses": []
+  },
+  "semantic_stress_bm25": {
+    "queries": 10,
+    "recall_at_1": 1.0,
+    "recall_at_5": 1.0,
+    "mrr_at_5": 1.0,
+    "avg_ms": 242.5550174957607,
+    "misses": []
+  },
+  "semantic_stress_hybrid": {
+    "queries": 10,
+    "recall_at_1": 1.0,
+    "recall_at_5": 1.0,
+    "mrr_at_5": 1.0,
+    "avg_ms": 244.42153759882785,
+    "misses": []
+  },
+  "reindex": {
+    "chunks": 12,
+    "reindex_ms": 661.8051379919052,
+    "chunks_per_sec": 18.132225501317848,
+    "output": "✅ Reindex complete\n  Model: minilm-l6-v2-int8\n  Indexed: 12\n  Skipped: 0 (empty)\n  Errors: 0\n  Total chunks: 12\n  Elapsed: 0.3s",
+    "recall_at_5_after": 1.0,
+    "mrr_at_5_after": 0.9722222222222222
+  },
+  "semantic_queries_count": 8,
+  "base_queries_count": 10,
+  "semantic_stress_queries_count": 10
+}

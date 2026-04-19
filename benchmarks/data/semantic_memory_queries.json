@@ -1,0 +1,52 @@
+[
+  {
+    "query": "local docker compose postgres database for development",
+    "expected_doc_id": "docker-postgres-sem",
+    "note": "lexical query vs paraphrased doc"
+  },
+  {
+    "query": "redis cache for rate limiting and sessions",
+    "expected_doc_id": "redis-cache-sem",
+    "note": "cache/rate limit wording vs paraphrased doc"
+  },
+  {
+    "query": "react vite typescript frontend with zustand and react query",
+    "expected_doc_id": "react-frontend-sem",
+    "note": "common stack names vs abstract frontend wording"
+  },
+  {
+    "query": "oauth jwt password reset auth service owner",
+    "expected_doc_id": "auth-service-owner-sem",
+    "note": "auth protocol terms vs paraphrased doc"
+  },
+  {
+    "query": "stripe billing invoice webhook subscriptions",
+    "expected_doc_id": "stripe-billing-sem",
+    "note": "Stripe-specific words vs generic payments doc"
+  },
+  {
+    "query": "nightly s3 backups retention snapshots",
+    "expected_doc_id": "s3-backups-sem",
+    "note": "S3/object storage wording gap"
+  },
+  {
+    "query": "terraform aws eu-west-1 remote state bucket",
+    "expected_doc_id": "terraform-infra-sem",
+    "note": "Terraform/AWS words vs generic infra-code doc"
+  },
+  {
+    "query": "staging kubernetes ingress rolling updates readiness probes",
+    "expected_doc_id": "kubernetes-staging-sem",
+    "note": "Kubernetes terms vs orchestration doc"
+  },
+  {
+    "query": "sentry alerting backend oncall error monitoring",
+    "expected_doc_id": "sentry-monitoring-sem",
+    "note": "Sentry naming vs generic observability doc"
+  },
+  {
+    "query": "postmark transactional email templates qa mailbox",
+    "expected_doc_id": "email-provider-sem",
+    "note": "Postmark/vendor name vs generic mail vendor doc"
+  }
+]

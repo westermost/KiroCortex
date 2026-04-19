@@ -1,0 +1,42 @@
+[
+  {
+    "id": "docker-postgres-sem",
+    "content": "[doc_id:docker-postgres-sem] Developer laptops start a relational datastore through a compose manifest. The database container keeps state on a mounted volume and is reachable by the application service during local work."
+  },
+  {
+    "id": "redis-cache-sem",
+    "content": "[doc_id:redis-cache-sem] A transient in-memory key value service accelerates throttling checks and short-lived user context lookups. Engineers usually reach it on the default cache port."
+  },
+  {
+    "id": "react-frontend-sem",
+    "content": "[doc_id:react-frontend-sem] The browser client is built with a modern component UI library, a fast dev bundler, and typed JavaScript. Client-side state and server fetch state use lightweight stores instead of Redux."
+  },
+  {
+    "id": "auth-service-owner-sem",
+    "content": "[doc_id:auth-service-owner-sem] Alice is responsible for the login domain. Her service handles federated sign-in, issues bearer credentials, and supports account recovery flows."
+  },
+  {
+    "id": "stripe-billing-sem",
+    "content": "[doc_id:stripe-billing-sem] Subscription charging relies on an external payments provider. Incoming event callbacks update customer plans and invoice status in the worker pipeline."
+  },
+  {
+    "id": "s3-backups-sem",
+    "content": "[doc_id:s3-backups-sem] Overnight snapshots are archived to an object storage bucket. Retention preserves one month of daily recovery points plus a year of monthly archives."
+  },
+  {
+    "id": "terraform-infra-sem",
+    "content": "[doc_id:terraform-infra-sem] Cloud resources are declared as infrastructure code. The deployment target sits in an EU region and remote state is stored in an encrypted bucket."
+  },
+  {
+    "id": "kubernetes-staging-sem",
+    "content": "[doc_id:kubernetes-staging-sem] The pre-production cluster uses container orchestration with rolling rollout strategy. Traffic enters through an ingress controller and workloads expose readiness probes."
+  },
+  {
+    "id": "sentry-monitoring-sem",
+    "content": "[doc_id:sentry-monitoring-sem] Runtime exception tracking forwards alerts into the backend incident channel. The team uses an external error observability platform rather than self-hosted logs alone."
+  },
+  {
+    "id": "email-provider-sem",
+    "content": "[doc_id:email-provider-sem] Transaction messages are delivered through a dedicated outbound mail vendor. Template revisions are versioned and QA copies route to a non-production mailbox."
+  }
+]
